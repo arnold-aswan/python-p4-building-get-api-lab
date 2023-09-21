@@ -11,8 +11,8 @@ fake = Faker()
 
 with app.app_context():
 
-    BakedGood.query.delete()
     Bakery.query.delete()
+    BakedGood.query.delete()
     
     bakeries = []
     for i in range(20):
